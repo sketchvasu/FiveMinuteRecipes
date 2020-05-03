@@ -1,0 +1,180 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "five minute recipes",
+      "intents": [
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": [
+            "alexa open five minute recipes"
+          ]
+        },
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": [
+            "cancel"
+          ]
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": [
+            "five minute recipes",
+            "Alexa help me with five minute recipes"
+          ]
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": [
+            "stop"
+          ]
+        },
+        {
+          "name": "ChooseTypeIntent",
+          "slots": [
+            {
+              "name": "mealType",
+              "type": "mealType"
+            }
+          ],
+          "samples": [
+            "I want to eat a {mealType}",
+            "read me a {mealType} recipe",
+            "suggest me a {mealType} recipe",
+            "tell me a {mealType} recipe",
+            "give me a {mealType}",
+            "for {mealType}",
+            " with {mealType}",
+            "{mealType} is what I really need right now",
+            "Give me a {mealType} recipe",
+            "I want to eat {mealType}",
+            "meals for {mealType}",
+            "recipes for {mealType}",
+            "{mealType} recipes",
+            "{mealType}"
+          ]
+        },
+        {
+          "name": "IngredientsIntent",
+          "slots": [],
+          "samples": [
+            "help me with ingredients",
+            "what\u0027s required for this",
+            "what all do i need",
+            "what do i need",
+            " what do i need to make this",
+            "what can you tell me about the contents",
+            "nutrition facts",
+            "what are the ingredients",
+            "ingredients",
+            "What\u0027s in it"
+          ]
+        },
+        {
+          "name": "InstructionsIntent",
+          "slots": [],
+          "samples": [
+            "give me instructions",
+            "can you repeat one more time",
+            "One more time please",
+            "What",
+            "I didn\u0027t hear you there",
+            "Explain that to me again",
+            "Repeat this step",
+            "Repeat"
+          ]
+        },
+        {
+          "name": "NextStepIntent",
+          "slots": [],
+          "samples": [
+            "what\u0027s the next step",
+            "what\u0027s next",
+            "Keep going",
+            "Next step",
+            "Next",
+            "Got it"
+          ]
+        },
+        {
+          "name": "AMAZON.YesIntent",
+          "samples": [
+            "let\u0027s do it",
+            "awesome",
+            "great",
+            "Roger Roger",
+            "sure",
+            "definitely",
+            "yep",
+            "yes"
+          ]
+        },
+        {
+          "name": "AMAZON.NoIntent",
+          "samples": [
+            "I don\u0027t like this",
+            "no way",
+            "never",
+            "definitely not",
+            "nah",
+            "nope",
+            "no"
+          ]
+        },
+        {
+          "name": "DifferentRecipeIntent",
+          "slots": [],
+          "samples": [
+            "give me something else",
+            "want to try something else",
+            "show me a different recipe",
+            "give me another recipe",
+            "give me a different recipe to eat",
+            "give me something else to eat",
+            "any other meals",
+            "I changed my mind",
+            "I don\u0027t want to eat that",
+            "I don\u0027t like this recipe after all",
+            "Give me a different recipe"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "Snack"
+              }
+            },
+            {
+              "name": {
+                "value": "Dinner"
+              }
+            },
+            {
+              "name": {
+                "value": "Lunch"
+              }
+            },
+            {
+              "name": {
+                "value": "Breakfast"
+              }
+            }
+          ],
+          "name": "mealType"
+        }
+      ],
+      "modelConfiguration": {
+        "fallbackIntentSensitivity": {
+          "level": "LOW"
+        }
+      }
+    }
+  },
+  "version": "8"
+}
